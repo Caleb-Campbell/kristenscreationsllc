@@ -80,7 +80,7 @@ const Weddings = () => {
         </p>
         <div className="mx-auto w-10/12 border-b-2" />
         <p className="p-32 indent-3 italic">
-          Weddings are one of the most significant events in a couple's life as
+          {` Weddings are one of the most significant events in a couple's life as
           it marks the beginning of their journey together as partners. it is a
           celebration of love, commitment, and the bond shared between two
           people. weddings bring families and friends together, making it an
@@ -102,7 +102,7 @@ const Weddings = () => {
           everything goes perfectly. with kristen hatch's services, you can rest
           assured that every aspect of your wedding, from the smallest detail to
           the grandest plan, will be taken care of with the utmost
-          professionalism and expertise.
+          professionalism and expertise.`}
         </p>
       </div>
     </Layout>
