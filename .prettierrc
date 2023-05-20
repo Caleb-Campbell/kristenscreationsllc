@@ -1,0 +1,12 @@
+{
+    "overrides": [
+      {
+        "files": "*.css",
+        "options": {
+          "css": {
+            "propertiesOrder": "keep"
+          }
+        }
+      }
+    ]
+  }

@@ -4,9 +4,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
-const Layout = ({ children, bg }: {bg?: string, children: React.ReactNode}) => (
+const Layout = ({ children, bg, active }: {active?: string, bg?: string, children: React.ReactNode}) => (
   <>
-    <Header />
+    <Header active={active} />
     <div>
       <main>{children}</main>
     </div>
