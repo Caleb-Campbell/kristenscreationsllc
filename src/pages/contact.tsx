@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Layout from "~/components/Layout";
 import splash from "../../public/splash.jpg";
+import { Button } from "~/components/Button";
+import { api } from "~/utils/api";
 
 const ContactPage: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -10,11 +12,26 @@ const ContactPage: React.FC = () => {
     setSelectedOption(event.target.value);
   };
 
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    send()
+  }
+
+  const mailHandler = api.mail.hello.useMutation()
+
+  const send = () => {
+    mailHandler.mutate({
+      to: "calebcampbellcrm@gmail.com",
+      subject: "Hello, this is a test email",
+      text: "This is a test email from the website",
+    })
+  }
+
   return (
     <Layout active={"/contact"}>
       <div className="relative">
         <img
-          src="/contact_splash.jpg"
+          src="/splash.jpg"
           className="h-[500px] w-full object-cover opacity-80"
         />
       </div>
@@ -90,12 +107,9 @@ const ContactPage: React.FC = () => {
               ></textarea>
             </div>
             <div className="flex justify-end">
-              <button
-                type="submit"
-                className="focus:shadow-outline bg-blue-500 px-4 py-2 uppercase text-white hover:bg-blue-700 focus:outline-none"
-              >
-                Send
-              </button>
+              <Button onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>handleSubmit(e)}>
+                Submit
+              </Button>
             </div>
           </form>
         </div>

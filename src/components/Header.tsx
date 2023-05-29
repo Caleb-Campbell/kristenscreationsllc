@@ -57,21 +57,21 @@ export default function Example({ active }: { active?: string }) {
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button
-                  className="fixed right-0 top-0 inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  className="fixed right-0 top-10 inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-7 w-7" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-7 w-7" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
               <div className="items-between flex w-fit justify-between sm:items-stretch sm:justify-start">
                 <Link
                   href={"/"}
-                  className="uppercase text-white sm:text-base lg:text-4xl"
+                  className="uppercase text-white text-3xl md:text-4xl"
                 >
                   Kristens Creations
                 </Link>
@@ -113,7 +113,7 @@ export default function Example({ active }: { active?: string }) {
                                           active
                                             ? "bg-gray-100 text-white"
                                             : "text-white",
-                                          "block px-4 py-2 text-base font-medium"
+                                          "block px-4 uppercase py-2 text-base font-medium"
                                         )}
                                         aria-current={
                                           child.current ? "page" : undefined
@@ -186,7 +186,7 @@ export default function Example({ active }: { active?: string }) {
                     >
                       <Menu.Items
                         static
-                        className="absolute  mt-12 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        className="absolute mt-12 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                       >
                         <div className="py-1">
                           {item.children.map((child) => (
@@ -198,7 +198,7 @@ export default function Example({ active }: { active?: string }) {
                                     active
                                       ? "bg-gray-600 text-gray-900"
                                       : "bg-opacity-10 text-gray-700",
-                                    "block bg-opacity-10 px-4 py-2 text-base font-medium"
+                                    "block bg-opacity-10 px-4 py-2 text-base uppercase"
                                   )}
                                   aria-current={
                                     child.current ? "page" : undefined

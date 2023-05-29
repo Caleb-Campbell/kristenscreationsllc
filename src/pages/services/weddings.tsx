@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "~/components/Layout";
+import { Splash } from "~/components/Splash";
 
 const GalleryItem = ({
   imageSrc,
@@ -65,45 +66,64 @@ const Weddings = () => {
     },
   ];
 
+    const arrangements = [
+      {
+        title: 'Consultation',
+        description: 'I offer an initial consultation where you as a customer can discuss your vision, preferences, and requirements for your wedding decor. This consultation may take place in person, over the phone, or via email.',
+      },
+      {
+        title: 'Design and Planning',
+        description: 'I provide creative design ideas and suggestions based on your preferences and the overall theme of the wedding. I am here to assist in planning the decor layout, color schemes, floral arrangements, lighting, and other decorative elements.',
+      },
+      {
+        title: 'Customization',
+        description: 'In my wedding portfolio, you will find previous pictures you can choose from, including a space where you can explore different inspirations for your special day.',
+      },
+      {
+        title: 'Setup and Installation',
+        description: 'On the wedding day, I take care of the complete setup and installation of the decor. This includes setting up floral arrangements, drapery, centerpieces, lighting, and any other decorative elements.',
+      },
+      {
+        title: 'Quality and Professionalism',
+        description: 'I use high-quality materials and products to ensure that the decor looks elegant and withstands the duration of the event. I will promptly respond to inquiries, be punctual, and demonstrate excellent customer service.',
+      },
+      {
+        title: 'Clear Pricing and Contracts',
+        description: 'I will also provide transparent pricing information, including the cost of materials, labor, and any additional services. You will receive a detailed contract that outlines the scope of work, payment terms, cancellation policies, and any other relevant terms and conditions.',
+      },
+      {
+        title: 'Post-Event Cleanup',
+        description: 'After the wedding, my team and I will efficiently dismantle and remove all rented decor elements, ensuring that the venue is left clean and as it was before.',
+      },
+    ];
+  
+
   return (
     <Layout>
-      <div className="relative">
-        <img
-          src="https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1827&q=80" // Replace with actual stock image URL
-          className="h-[500px] w-full object-cover opacity-80 hue-rotate-15 filter"
-        />
-      </div>
+      <Splash title="weddings" height="500px" src="https://images.unsplash.com/photo-1672395297065-25088a59e212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" />
+      
       <div className="container mx-auto my-16">
-        <h1 className="mb-8 text-center text-4xl uppercase ">Weddings</h1>
-        <p className="mx-auto w-2/12 translate-y-3 bg-white text-center text-lg uppercase">
+        <p className="mx-auto w-6/12 md:w-2/12 translate-y-4  md:translate-y-4 bg-white text-center text-2xl uppercase">
           What to Expect
         </p>
         <div className="mx-auto w-10/12 border-b-2" />
-        <p className="p-32 indent-3 italic">
-          {` Weddings are one of the most significant events in a couple's life as
-          it marks the beginning of their journey together as partners. it is a
-          celebration of love, commitment, and the bond shared between two
-          people. weddings bring families and friends together, making it an
-          occasion to cherish and remember forever. consequently, it is
-          essential to ensure that every aspect of the wedding goes smoothly and
-          is executed to perfection. this is where a professional wedding
-          planner, like kristen hatch, comes into the picture. a skilled and
-          experienced wedding planner will take care of everything, from
-          decorations to transportation and food, ensuring that the wedding
-          ceremony and reception run smoothly. hiring a professional wedding
-          planner like kristen hatch can prove to be beneficial in many ways.
-          firstly, it saves the bride and groom time and energy, which can be
-          tedious and stressful. secondly, a wedding planner has vast knowledge,
-          experience, and resources to ensure that every aspect of the wedding
-          is taken care of. lastly, a wedding planner can ensure that everything
-          fits within your budget, giving you the best possible service, with
-          the most value for your money. in conclusion, weddings are significant
-          events that require careful planning and execution to ensure that
-          everything goes perfectly. with kristen hatch's services, you can rest
-          assured that every aspect of your wedding, from the smallest detail to
-          the grandest plan, will be taken care of with the utmost
-          professionalism and expertise.`}
-        </p>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
+        {arrangements.map((arrangement, index) => (
+          <li key={index} className="bg-white shadow p-6 rounded transition-all">
+            <h2 className="text-xl uppercase font-medium mb-2">{arrangement.title}</h2>
+            <p>{arrangement.description}</p>
+          </li>
+        ))}
+      </ul>
+       <div className="w-full shadsow-md mt-6 mb-3 rounded-lg">
+        <iframe
+            className="mx-auto w-[300px] h-[169px] md:w-[890px] md:h-[500px] rounded-lg shadow-md"
+            src="https://www.canva.com/design/DAFik8-nFh8/view?embed"
+            loading="lazy"
+            allowFullScreen
+            allow="fullscreen"
+        ></iframe>
+        </div>
       </div>
     </Layout>
   );

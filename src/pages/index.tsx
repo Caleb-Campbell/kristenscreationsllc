@@ -52,8 +52,8 @@ const Home: NextPage = () => {
           <div className="relative">
             <img src="/splash.jpg" className="opacity-80" />
           </div>
-          <div className="mx-auto my-20 w-8/12 border border-l-0 border-r-0 border-pinky ">
-            <p className="sm:text:xl p-10 text-center md:text-4xl">
+          <div className="mx-auto my-20 w-10/12 border border-l-0 border-r-0 border-pinky ">
+            <p className="text-xl p-10 text-center md:text-4xl">
               DEDICATED TO MAKING YOUR EVENT BEAUTIFUL AND UNFORGETTABLE
             </p>
           </div>

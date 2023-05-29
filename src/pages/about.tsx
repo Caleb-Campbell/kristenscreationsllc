@@ -32,15 +32,16 @@ const About = () => {
   
     return (
       <Layout active='/about'>
-        <div className="w-full h-[140px] bg-gray-300" />
+        <img
+          src="https://scontent-den4-1.xx.fbcdn.net/v/t39.30808-6/221889052_10226060343202308_6336454311160002484_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Zt2_v2r_Iv4AX9Rgfzu&_nc_ht=scontent-den4-1.xx&oh=00_AfCQkNbXtTBXyPSdwZBhg7R0bh9YVzPaMsa4tBaNDjGVXw&oe=6479535D0" // Replace with actual stock image URL
+          className="h-[500px] w-full object-cover opacity-80 hue-rotate-15 filter"
+        />
           <div className="flex flex-col lg:my-[100px] items-center sm:flex-row sm:justify-center">
-            <div className="lg:w-4/12 sm:w-12/12 flex my-10 flex-col gap-10 items-center justify-center">
+            <div className="lg:w-6/12 sm:w-12/12 flex my-10 flex-col gap-5 items-center justify-center">
               <p className="text-6xl">Kristen Hatch</p>
               <p className="italic text-3xl">professional showrunner</p>
               <p className="w-8/12 text-2xl">
-                Kristen Hatch
-                professional showrunner
-                a1 lorem ipsum dolor sit amet consectetur adipisicing elit. laboriosam tempora ratione iure fuga illo eum, aut quos natus a tempore numquam officia rem optio odit fugit ab modi doloremque architecto. lorem ipsum dolor sit amet consectetur adipisicing elit. facilis dolorum odio nobis, ullam non in ex cumque quasi iste dignissimos culpa sunt minima natus numquam voluptates velit voluptas, officia autem!
+              {`Hey there, I'm Kristen Hatch, the creative mind behind Kristen's Creations. I am so excited to share my love for floral and decor design with you. At Kristen's Creations, we specialize in bringing breathtaking beauty to parties, weddings, and all sorts of special events. From stunning floral arrangements to meticulously curated decor elements, I pour my heart and soul into every detail. But that's not all! I also offer small seasonal arrangements that add a touch of charm and joy to any space. Whether it's a cozy holiday gathering or a simple gesture of love, these arrangements are perfect for brightening up your day. With Kristen's Creations, you can expect personalized service, stunning designs, and a whole lot of passion. Let's create something magical together!`}
               </p>
             </div>
             <div className="sm:w-full lg:w-6/12 sm:h-[900px] lg:h-auto flex items-center justify-center">
