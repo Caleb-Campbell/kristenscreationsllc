@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon, XMarkIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
@@ -152,7 +152,7 @@ export default function Example({ active }: { active?: string }) {
             <div className="fixed left-0 top-0 mx-auto h-screen w-screen bg-gray-300 bg-opacity-80 px-2 pb-3 pt-2">
               <Disclosure.Button
                 className={
-                  "block rounded-md px-3 py-2 text-base font-medium text-white"
+                  "block rounded-md px-3 py-2 text-base font-medium text-white uppercase"
                 }
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -169,11 +169,11 @@ export default function Example({ active }: { active?: string }) {
                       className={classNames(
                         item.current
                           ? "bg-gray-400 text-white"
-                          : "text-black hover:bg-gray-700 hover:text-white",
-                        "block rounded-md px-3 py-2 text-base font-medium"
+                          : "text-black hover:bg-pinky hover:text-white",
+                        "rounded-md px-3 flex items-center py-2 text-base font-medium uppercase"
                       )}
                     >
-                      {item.name}
+                      {item.name} { ' '} <ChevronDownIcon className="h-5 w-5" />
                     </Menu.Button>
                     <Transition
                       as={Fragment}
@@ -221,8 +221,8 @@ export default function Example({ active }: { active?: string }) {
                     className={classNames(
                       item.current
                         ? "bg-gray-400 text-white"
-                        : "text-black hover:bg-gray-700 hover:text-white",
-                      "block rounded-md px-3 py-2 text-base font-medium"
+                        : "text-black hover:bg-pinky hover:text-white",
+                      "block rounded-md px-3 py-2 text-base font-medium w-full uppercase"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >

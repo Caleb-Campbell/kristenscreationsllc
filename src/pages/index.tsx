@@ -31,9 +31,9 @@ const Home: NextPage = () => {
     "https://i.ibb.co/fSPrjqx/c.jpg",
     "https://i.ibb.co/qp7N6CZ/d.jpg",
     "https://i.ibb.co/RNHPjh7/e.jpg",
-    // "https://i.ibb.co/8x07XRC/g.jpg",
+    "https://i.ibb.co/8x07XRC/g.jpg",
     "https://i.ibb.co/Hn0zx5H/h.jpg",
-    // "https://i.ibb.co/4pps6DC/i.jpg",
+    "https://i.ibb.co/4pps6DC/i.jpg",
     // "https://i.ibb.co/L01NSXy/j.jpg",
     // "https://i.ibb.co/NrBtctK/k.jpg",
     // "https://i.ibb.co/8XBc8fB/l.jpg",
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
       <main className="bg-white">
         <Layout>
           <div className="relative">
-            <img src="/splash.jpg" className="opacity-80" />
+            <img src="/splash.jpg" className="opacity-70" />
           </div>
           <div className="mx-auto my-20 w-10/12 border border-l-0 border-r-0 border-pinky ">
             <p className="text-xl p-10 text-center md:text-4xl">

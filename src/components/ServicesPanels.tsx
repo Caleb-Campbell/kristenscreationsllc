@@ -9,11 +9,11 @@ export const ServicesPanels = ({
 }) => {
   return (
     <>
-      <div className="mx-auto w-8/12 max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-10/12 max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <p className="m-3 mx-auto mb-10 w-full p-3 text-center text-3xl uppercase md:text-4xl ">
           {title}
         </p>
-        <div className="flex flex-col justify-around px-4 sm:flex-row lg:gap-[40px]">
+        <div className="flex flex-col justify-around sm:flex-row lg:gap-[30px]">
           {images.map((image) => {
             return (
               <Link
@@ -22,7 +22,7 @@ export const ServicesPanels = ({
                 className="relative my-10 flex-shrink-0 cursor-pointer transition-all hover:scale-105 hover:brightness-75 hover:filter"
               >
                 <img
-                  className="w-full hover:blur-sm sm:h-[500px] sm:w-[350px]"
+                  className="w-72 h-96 hover:blur-sm "
                   src={image.img}
                 />
                 <p className="font-mono absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-2xl font-medium uppercase text-black ">

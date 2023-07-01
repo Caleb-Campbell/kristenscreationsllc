@@ -28,13 +28,15 @@ const About = () => {
       'https://via.placeholder.com/400x400',
       'https://via.placeholder.com/400x400',
       'https://via.placeholder.com/400x400',
+      'https://via.placeholder.com/400x400',
     ]
   
     return (
       <Layout active='/about'>
         <img
-          src="https://scontent-den4-1.xx.fbcdn.net/v/t39.30808-6/221889052_10226060343202308_6336454311160002484_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Zt2_v2r_Iv4AX9Rgfzu&_nc_ht=scontent-den4-1.xx&oh=00_AfCQkNbXtTBXyPSdwZBhg7R0bh9YVzPaMsa4tBaNDjGVXw&oe=6479535D0" // Replace with actual stock image URL
-          className="h-[500px] w-full object-cover opacity-80 hue-rotate-15 filter"
+          src="https://images.unsplash.com/photo-1527903868760-c4e2f19b68c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" // Replace with actual stock image URL
+          className="h-[500px] w-full object-cover opacity-60  "
+          alt="background image"
         />
           <div className="flex flex-col lg:my-[100px] items-center sm:flex-row sm:justify-center">
             <div className="lg:w-6/12 sm:w-12/12 flex my-10 flex-col gap-5 items-center justify-center">
