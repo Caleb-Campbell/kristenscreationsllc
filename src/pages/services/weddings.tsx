@@ -116,13 +116,13 @@ const Weddings = () => {
         ))}
       </ul>
        <div className="w-full shadsow-md mt-6 mb-3 rounded-lg">
-        <iframe
+        {/* <iframe
             className="mx-auto w-[300px] h-[169px] md:w-[890px] md:h-[500px] rounded-lg shadow-md"
             src="https://www.canva.com/design/DAFik8-nFh8/view?embed"
             loading="lazy"
             allowFullScreen
             allow="fullscreen"
-        ></iframe>
+        ></iframe> */}
         </div>
       </div>
     </Layout>
