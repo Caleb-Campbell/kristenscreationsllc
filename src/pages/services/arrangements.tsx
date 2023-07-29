@@ -15,19 +15,19 @@ const Arrangements = () => {
     {
       id: 1,
       name: "Weddings",
-      image: "https://picsum.photos/id/1031/400/300",
+      image: "https://images.unsplash.com/photo-1595467959554-9ffcbf37f10f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       description: "This is the first arrangement",
     },
     {
       id: 2,
       name: "Parties",
-      image: "https://picsum.photos/id/1035/400/300",
+      image: "https://images.unsplash.com/photo-1575559439920-282880e5164d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       description: "This is the second arrangement",
     },
     {
       id: 3,
       name: "Seasonal",
-      image: "https://picsum.photos/id/1038/400/300",
+      image: "https://images.unsplash.com/photo-1599704991344-4447a3c595f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       description: "This is the third arrangement",
     },
   ];
@@ -75,7 +75,7 @@ const Arrangements = () => {
 
   return (
     <Layout>
-      <Splash title='arrangments' height='500px' src='https://images.unsplash.com/photo-1527903789995-dc8ad2ad6de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=820&q=80' />
+      <Splash title='arrangements' height='500px' src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80' />
       <div className="container mx-auto my-16">
         <div className="mx-auto w-10/12 border-b-2" />
         <Modal className="h-[80vh] bg-opacity-5 w=[90vw]" open={Boolean(gridData)} toggle={()=>setGridData(undefined)} >
@@ -115,7 +115,7 @@ const ArrangementItem = ({
 }: ArrangementItemProps) => (
   <div onClick={
     () => handleCatClick(title.toLowerCase())} className="rounded-sm bg-white p-6 shadow-md cursor-pointer hover:scale-[1.01] transition-all hover:shadow-lg">
-    <img src={imageSrc} alt={alt} className="mb-4 rounded-sm mx-auto" />
+   <img src={imageSrc} alt={alt} className="mb-4 h-96 w-96 rounded-sm mx-auto object-cover" />
     <h2 className="mb-2 text-xl uppercase text-center">{title}</h2>
     {/* <p>{description}</p> */}
   </div>

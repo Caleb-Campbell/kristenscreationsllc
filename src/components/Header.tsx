@@ -72,10 +72,9 @@ export default function Example({ active }: { active?: string }) {
                 <Link
                   href={"/"}
                   className="uppercase text-white text-3xl md:text-4xl"
-                >
+                  >
                   Kristens Creations
                 </Link>
-
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="absolute right-0 space-x-2">
                     {navigation.map((item) =>

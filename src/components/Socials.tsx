@@ -26,28 +26,15 @@ const Socials = ({ images } : { images: string[] }) => {
         <p className='text-center text-pinky my-10 transition-all'>follow along @kristenscreations</p>
       </Link>
       </div>
-      <div className="flex flex-wrap justify-center -mx-4">
+      <div className="flex flex-wrap justify-center -mx-6">
         <div className="w-full">
           <div className="flex flex-wrap justify-around">
             {images.map((image) => (
-              <div key={image} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-2">
+              <div key={image} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-1">
                 <img src={image} className="w-full h-auto my-1" />
               </div>
             ))}
           </div>
-          {/* <div className="flex justify-center  mt-4">
-            {socialMediaLinks.map((link) => (
-              <a
-                key={link.url}
-                className="text-gray-500 hover:text-gray-700 mx-3"
-                href={link.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {link.text}
-              </a>
-            ))}
-          </div> */}
         </div>
       </div>
     </div>

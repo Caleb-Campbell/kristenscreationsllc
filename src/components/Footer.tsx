@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-400"
           >
             <img
-              src="favicon.ico"
+              src="/favicon.ico"
               className="h-16 w-16 scale-150 md:translate-x-10"
             />
           </a>
