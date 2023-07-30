@@ -20,7 +20,7 @@ const Arrangements = () => {
     },
     {
       id: 2,
-      name: "Parties",
+      name: "Parties / Dances",
       image: "https://images.unsplash.com/photo-1575559439920-282880e5164d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       description: "This is the second arrangement",
     },
@@ -43,18 +43,28 @@ const Arrangements = () => {
 
     ],
     seasonal: [
-      'https://picsum.photos/id/1031/400/300',
-      'https://picsum.photos/id/1031/300/400',
-      'https://picsum.photos/id/1031/400/300',
-      'https://picsum.photos/id/1031/300/400',
-      'https://picsum.photos/id/1031/400/300',
-      'https://picsum.photos/id/1031/300/400',
-      'https://picsum.photos/id/1031/400/300',
-      'https://picsum.photos/id/1031/300/400',
-      'https://picsum.photos/id/1031/400/300',
-      'https://picsum.photos/id/1031/300/400',
-    ]
-  }
+      "https://i.ibb.co/Wzy9TN6/IMG-0895.jpg", 
+      "https://i.ibb.co/mtx1RXy/IMG-1287.jpg", 
+      "https://i.ibb.co/DW35DWH/IMG-1295.jpg", 
+      "https://i.ibb.co/rcXGLPt/IMG-1674.jpg", 
+      "https://i.ibb.co/NmnLfck/IMG-0708.jpg", 
+      "https://i.ibb.co/JzZ948s/IMG-1122.jpg", 
+      "https://i.ibb.co/jvWSwQ3/IMG-1278.jpg", 
+      "https://i.ibb.co/Bs3Lh5h/IMG-1294.jpg", 
+      "https://i.ibb.co/hy2h6kv/IMG-1652.jpg", 
+      "https://i.ibb.co/WFgLCzG/IMG-1663.jpg", 
+      "https://i.ibb.co/jzCTN4Y/IMG-1723.jpg", 
+      "https://i.ibb.co/SP4J6rY/IMG-1748.jpg", 
+      "https://i.ibb.co/rfjGGyc/IMG-1745.jpg", 
+      "https://i.ibb.co/PWpKZPk/IMG-0712.jpg", 
+      "https://i.ibb.co/DLYZR9M/IMG-0714.jpg", 
+      "https://i.ibb.co/WPq8Fnq/IMG-0893.jpg",
+      "https://i.ibb.co/jygkrCM/IMG-2294.jpg",
+      "https://i.ibb.co/zsnQsKr/IMG-2263.jpg",
+      "https://i.ibb.co/7Xhm7TQ/IMG-2218.jpg"
+    ],
+
+}
 
   const [gridData, setGridData] = useState<string[] | undefined>(undefined)
 
@@ -63,7 +73,7 @@ const Arrangements = () => {
     if(cat === 'weddings') {
       dataToUse = data.weddings
     }
-    if(cat === 'parties') {
+    if(cat === 'parties / dances') {
       dataToUse = data.parties
     }
     if(cat === 'seasonal') {
@@ -125,9 +135,9 @@ export default Arrangements;
 
 const ImageGrid = ({grid} : {grid: string[] | undefined}) => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+    <div className="mt-[600px] grid md:grid-cols-2 grid-cols-1 gap-10">
       {grid && grid.map((item) => (
-        <img className="h-72 w-72" src={item} alt="test" />
+        <img className="h-72 w-72 object-cover" src={item} alt="test" />
       ))}
     </div>
   );

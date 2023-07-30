@@ -13,6 +13,11 @@ type rentalData = {
   price: string;
 };
 
+"https://i.ibb.co/By9FFcd/IMG-2418.jpg"
+"https://i.ibb.co/GpNT5bB/IMG-2427.jpg"
+"https://i.ibb.co/Nmn6mJx/IMG-8690.jpg"
+"https://i.ibb.co/zs46j9s/image0-2.jpg"
+
 
 const Rentals = () => {
   const rentalItems = [
@@ -61,6 +66,13 @@ const Rentals = () => {
         description: "Includes setup and takedown",
         price: "45"
       },
+      {
+        id: 3,
+        name: "Rectangle Arch",
+        image: "https://mail.google.com/mail/u/0?ui=2&ik=208477b8db&attid=0.1&permmsgid=msg-f:1771684666650225650&th=189649d149b16bf2&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8NHd5OltrOvovcsg15FWLVTYSFH3kR_mHY-YQtHNwISkCWWJJzx82EyVSmkJTXop4WDHQED_dG9cApahJA4pBr_hPyZ159mLleefywQrDsMgaJuODYGRRhz9g&disp=emb&realattid=189649cdbce23d9232e1",
+        description: "Includes setup and takedown",
+        price: "45"
+      },
     ],
     decor: [
       {
@@ -89,21 +101,21 @@ const Rentals = () => {
       {
         id: 1,
         name: "Silk Flower Rental - Small",
-        image: "https://picsum.photos/id/1031/400/300",
+        image: "https://i.ibb.co/Nmn6mJx/IMG-8690.jpg",
         description: "",
         price: "25"
       },
       {
         id: 2,
         name: "Silk Flower Rental - Medium",
-        image: "https://picsum.photos/id/1035/400/300",
+        image: "https://i.ibb.co/GpNT5bB/IMG-2427.jpg",
         description: "",
         price: "35"
       },
       {
         id: 3,
         name: "Silk Flower Rental - Large",
-        image: "https://i.ibb.co/W6hCSPk/IMG-0396.jpg",
+        image: "https://i.ibb.co/By9FFcd/IMG-2418.jpg ",
         description: "",
         price: "65"
       },

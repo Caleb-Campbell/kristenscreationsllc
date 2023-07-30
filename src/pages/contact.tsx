@@ -35,7 +35,7 @@ const ContactPage: React.FC = () => {
           className="h-[500px] w-full object-cover opacity-80"
         />
       </div>
-      <div className="w-4/12 mx-auto p-4 flex flex-col jusitfy-center h-96 items-center text-xl mt-6">
+      <div className="w-9/12 mx-auto p-4 flex flex-col jusitfy-center h-96 items-center text-center text-xl mt-6">
         <h3 className="italic text-3xl">Contact Info:</h3>
         <label>Phone</label>
         <a className="text-pinky" href="tel:+1234567890">{'(509) 554-1793 '}</a>
