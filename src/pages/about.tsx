@@ -47,7 +47,7 @@ const About = () => {
               </p>
             </div>
             <div className="sm:w-full lg:w-6/12 sm:h-[900px] lg:h-auto flex items-center justify-center">
-              <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages2.minutemediacdn.com%2Fimage%2Fupload%2Fc_fit%2Cf_auto%2Cfl_lossy%2Cq_auto%2Cw_728%2Fv1563168679%2Fshape%2Fmentalfloss%2F587571-gettyimages-1139462208.jpg%3Fitok%3DAt8xe56C&f=1&nofb=1&ipt=ece5a94e892296b90da8388b0aa84169f34c07d8eeceffc64e7248926d19d730&ipo=images" className="w-full sm:w-6/12" />
+              <img src="" className="w-full sm:w-6/12" />
             </div>
           </div>
         <Socials images={photos} />
